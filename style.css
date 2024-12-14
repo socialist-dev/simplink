@@ -3,7 +3,7 @@
     src: url(public/fonts/montserrat-v26-vietnamese-regular.woff2) format("woff2");
 }
 @font-face {
-    font-family: "Impact";
+    font-family: "impact";
     src: url(public/fonts/impact.woff2) format("woff2");
 }
 * {
@@ -24,7 +24,7 @@
     --font-subheading-color: #7f7f7f;
     --font-title-theme-color: #df3119; 
     --font-price-size: 15px;
-    --typography-brand-title: "Impact";
+    --typography-brand-title: "impact";
     --typography-brand-subtitle: "Montserrat";
     --typography-brand-paragraph: "Montserrat";
 }
