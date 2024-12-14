@@ -10,7 +10,7 @@
     font-family: 'Impact Regular';
     font-style: normal;
     font-weight: normal;
-    src: local('Impact Regular'), url('public/fonts/impact.woff') format('woff');
+    src: local('Impact Regular'), url('public/fonts/impact.woff2') format('woff2');
 }
 * {
     user-select: none;
