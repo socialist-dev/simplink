@@ -19,6 +19,7 @@
     --font-pure-black: #000000;
     --font-brand-color: #ffffe4;
     --font-subheading-color: #7f7f7f;
+    --font-title-theme-color: #df3119; 
     --font-price-size: 15px;
     --typography-brand-title: "";
     --typography-brand-subtitle: "Montserrat";
@@ -34,6 +35,7 @@ h1, h2, h3 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: normal;
 }
+h3 {color: var(--font-title-theme-color);}
 p {
     font-family: var(--typography-brand-subtitle);
 }
@@ -140,8 +142,19 @@ p {
     text-align: center;
     /* align-items: center; */
 }
-.view__content .shop .shop__expand, .bio__expand {display: flex; align-items: right; float: right;}
-.view__content .shop .shop__expand:hover, .bio__expand:hover { text-decoration: underline; transition: 0.5s; cursor: pointer;}
+.view__content .shop .shop__expand, svg, .bio__expand {
+    display: flex; 
+    align-items: right; 
+    float: right; 
+    color: var(--base-sub-color);
+}
+.view__content .shop .shop__expand:hover, .bio__expand:hover { 
+    color: var(--base-pure-white);
+    fill: var(--base-pure-white);
+    text-decoration: underline; 
+    transition: 0.5s; 
+    cursor: pointer;
+}
 .view__content .shop .shop__items {
     display: flex;
     flex-direction: row;
@@ -172,7 +185,12 @@ p {
     width: 100%; 
     height: 200px;
 }
-.bio--tab {max-width: 1000px;}
+.bio--tab {
+    margin: 20px;
+    height: 85vh;
+    overflow-y: scroll;
+    max-width: 1000px;
+}
 /*  */
 .page-layout__navbar {
     display: flex;
@@ -193,27 +211,91 @@ input[type="radio"] {
 input[type="radio"]:checked + .tab-content {
     display: block;
 }
-/*  */
-.material-symbols-rounded {
-    font-size: 32px;
-    color: var(--base-sub-color);
-    transition: 0.5s;
-    font-variation-settings:
-    'FILL' 1,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 48
-}
-.material-symbols-rounded:hover {
-    color: var(--base-pure-white);
+.tab-buttons label > svg { fill: var(--base-sub-color);transition: 0.5s;}
+.tab-buttons label > svg:hover {
+    fill : var(--base-pure-white);
     transform: scale(1.2);
-    font-variation-settings: 
-    'FILL' 1,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 48
-    ;
 }
+/* Modal */
+#modalImage {
+    cursor: pointer;
+    transition: 0.3s;
+}
+#modalImage:hover {transform: scale(1.2);}
+.modal {
+    display: none;
+    position: fixed; 
+    z-index: 1; /* Sit on top */
+    padding-top: 10vh;
+    width: 100%; /* Full width */
+    height: 100vh; /* Full height */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    width: 100%;
+    max-width: 500px;
+}
+.modal-container {
+    display: flex;
+    flex-direction: column;
+    /* flex: 100%; */
+    margin: auto;
+    padding: 20px;
+    max-width: 500px;
+}
+.modal-container h2 {color: var(--font-title-theme-color);}
+.modal-links > a {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px 0;
+}
+.modal-container section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #fff;
+}
+/* Add Animation */
+.modal-content {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 /* Custom scrolbar: Transparent style */
 ::-webkit-scrollbar {
     width: 0;

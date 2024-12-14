@@ -9,6 +9,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <script type="module" src="modalImage.js"></script>
+    <!-- The Modal -->
+    <div id="modalContainer" class="modal">
+        <div class="modal-container modal-links">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img">
+            <h2>THE WEEKND - BLINDING LIGHTS (UO LIMITED 12' VINYL LP)</h2>
+            <section>
+                <p>50$</p>
+                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#fff"><path d="M284.53-80.67q-30.86 0-52.7-21.97Q210-124.62 210-155.47q0-30.86 21.98-52.7Q253.95-230 284.81-230t52.69 21.98q21.83 21.97 21.83 52.83t-21.97 52.69q-21.98 21.83-52.83 21.83Zm400 0q-30.86 0-52.7-21.97Q610-124.62 610-155.47q0-30.86 21.98-52.7Q653.95-230 684.81-230t52.69 21.98q21.83 21.97 21.83 52.83t-21.97 52.69q-21.98 21.83-52.83 21.83ZM206-800.67h589.38q22.98 0 34.97 20.84 11.98 20.83.32 41.83L693.33-490.67q-11 19.34-28.87 30.67-17.87 11.33-39.13 11.33H324l-52 96h454q14.17 0 23.75 9.62t9.58 23.83q0 14.22-9.58 23.72-9.58 9.5-23.75 9.5H278q-43 0-63-31.83-20-31.84-.33-68.17l60.66-111.33-149.33-316H80.67q-14.17 0-23.75-9.62-9.59-9.62-9.59-23.83 0-14.22 9.59-23.72 9.58-9.5 23.75-9.5h67q9.66 0 17.8 4.96 8.13 4.95 12.2 14.04L206-800.67Z"/></svg>
+            </section>
+            <!-- Paypal -->
+            <a href="">
+                <img width="100px" src="https://www.paypalobjects.com/digitalassets/c/website/logo/full-text/pp_fc_hl.svg" alt="">
+            </a>
+            <!-- Stripe -->
+             <a href="">
+                <svg viewBox="0 0 60 25" xmlns="http://www.w3.org/2000/svg" width="60" height="25" class="UserLogo variant-- "><title>Stripe logo</title><path fill="var(--userLogoColor, #0A2540)" d="M59.64 14.28h-8.06c.19 1.93 1.6 2.55 3.2 2.55 1.64 0 2.96-.37 4.05-.95v3.32a8.33 8.33 0 0 1-4.56 1.1c-4.01 0-6.83-2.5-6.83-7.48 0-4.19 2.39-7.52 6.3-7.52 3.92 0 5.96 3.28 5.96 7.5 0 .4-.04 1.26-.06 1.48zm-5.92-5.62c-1.03 0-2.17.73-2.17 2.58h4.25c0-1.85-1.07-2.58-2.08-2.58zM40.95 20.3c-1.44 0-2.32-.6-2.9-1.04l-.02 4.63-4.12.87V5.57h3.76l.08 1.02a4.7 4.7 0 0 1 3.23-1.29c2.9 0 5.62 2.6 5.62 7.4 0 5.23-2.7 7.6-5.65 7.6zM40 8.95c-.95 0-1.54.34-1.97.81l.02 6.12c.4.44.98.78 1.95.78 1.52 0 2.54-1.65 2.54-3.87 0-2.15-1.04-3.84-2.54-3.84zM28.24 5.57h4.13v14.44h-4.13V5.57zm0-4.7L32.37 0v3.36l-4.13.88V.88zm-4.32 9.35v9.79H19.8V5.57h3.7l.12 1.22c1-1.77 3.07-1.41 3.62-1.22v3.79c-.52-.17-2.29-.43-3.32.86zm-8.55 4.72c0 2.43 2.6 1.68 3.12 1.46v3.36c-.55.3-1.54.54-2.89.54a4.15 4.15 0 0 1-4.27-4.24l.01-13.17 4.02-.86v3.54h3.14V9.1h-3.13v5.85zm-4.91.7c0 2.97-2.31 4.66-5.73 4.66a11.2 11.2 0 0 1-4.46-.93v-3.93c1.38.75 3.1 1.31 4.46 1.31.92 0 1.53-.24 1.53-1C6.26 13.77 0 14.51 0 9.95 0 7.04 2.28 5.3 5.62 5.3c1.36 0 2.72.2 4.09.75v3.88a9.23 9.23 0 0 0-4.1-1.06c-.86 0-1.44.25-1.44.9 0 1.85 6.29.97 6.29 5.88z" fill-rule="evenodd"></path></svg>
+             </a>
+        </div>
+    </div>
     <div class="page-layout page-layout--mobile">
         <div class="page-layout--background">
             <video src="src/background.mp4" autoplay muted loop
@@ -31,7 +52,7 @@
                             <!-- <p class="header__text">Cry baby</p> -->
                             <label for="tab3">
                                 <p class="bio__expand">Artist
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M440-280h80v-240h-80v240Zm40-320q17 0 28.5-11.5T520-640q0-17-11.5-28.5T480-680q-17 0-28.5 11.5T440-640q0 17 11.5 28.5T480-600Zm0 520q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="M440-280h80v-240h-80v240Zm40-320q17 0 28.5-11.5T520-640q0-17-11.5-28.5T480-680q-17 0-28.5 11.5T440-640q0 17 11.5 28.5T480-600Zm0 520q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
                                 </p>
                             </label>
                         </div>
@@ -80,17 +101,17 @@
                             <!-- Expanding shop -->
                             <label for="tab2">
                                 <p class="shop__expand">More
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg>
                                 </p>
                             </label>
                             <div class="shop__items">
                                 <div class="shop__items-item">
-                                    <img src="src/img1.webp" alt="img" class="item-img" style="width: 150px;">
+                                    <img id="modalImage" src="src/img1.webp" alt="img" class="item-img" style="width: 150px;">
                                     <h3 class="item-title">THE WEEKND - BLINDING LIGHTS (UO LIMITED 12' VINYL LP)</h3>
                                     <p>50$</p>
                                 </div>
                                 <div class="shop__items-item">
-                                    <img src="src/img2.webp" alt="img" class="item-img" style="width: 150px;">
+                                    <img id="modalImage" src="src/img2.webp" alt="img" class="item-img" style="width: 150px;">
                                     <h3 class="item-title">THE WEEKND - BLINDING LIGHTS (UO LIMITED 12' VINYL LP)</h3>
                                     <p>50$</p>
                                 </div>
@@ -113,62 +134,62 @@
                     <section class="shop shop--tab">
                         <div class="shop__items">
                             <div class="shop__items-item">
-                                <img src="src/img1.webp" alt="img" class="item-img" style="width: 150px;">
+                                <img id="modalImage" src="src/img1.webp" alt="img" class="item-img" style="width: 150px;">
                                 <h3 class="item-title">THE WEEKND - BLINDING LIGHTS (UO LIMITED 12' VINYL LP)</h3>
                                 <p>50$</p>
                             </div>
                             <div class="shop__items-item">
-                                <img src="src/img2.webp" alt="img" class="item-img" style="width: 150px;">
+                                <img id="modalImage" src="src/img2.webp" alt="img" class="item-img" style="width: 150px;">
                                 <h3 class="item-title">THE WEEKND - BLINDING LIGHTS (UO LIMITED 12' VINYL LP)</h3>
                                 <p>50$</p>
                             </div>
                             <div class="shop__items-item">
-                                <img src="src/img1.webp" alt="img" class="item-img" style="width: 150px;">
+                                <img id="modalImage" src="src/img1.webp" alt="img" class="item-img" style="width: 150px;">
                                 <h3 class="item-title">THE WEEKND - BLINDING LIGHTS (UO LIMITED 12' VINYL LP)</h3>
                                 <p>50$</p>
                             </div>
                             <div class="shop__items-item">
-                                <img src="src/img2.webp" alt="img" class="item-img" style="width: 150px;">
+                                <img id="modalImage" src="src/img2.webp" alt="img" class="item-img" style="width: 150px;">
                                 <h3 class="item-title">THE WEEKND - BLINDING LIGHTS (UO LIMITED 12' VINYL LP)</h3>
                                 <p>50$</p>
                             </div>
                             <div class="shop__items-item">
-                                <img src="src/img1.webp" alt="img" class="item-img" style="width: 150px;">
+                                <img id="modalImage" src="src/img1.webp" alt="img" class="item-img" style="width: 150px;">
                                 <h3 class="item-title">THE WEEKND - BLINDING LIGHTS (UO LIMITED 12' VINYL LP)</h3>
                                 <p>50$</p>
                             </div>
                             <div class="shop__items-item">
-                                <img src="src/img2.webp" alt="img" class="item-img" style="width: 150px;">
+                                <img id="modalImage" src="src/img2.webp" alt="img" class="item-img" style="width: 150px;">
                                 <h3 class="item-title">THE WEEKND - BLINDING LIGHTS (UO LIMITED 12' VINYL LP)</h3>
                                 <p>50$</p>
                             </div>
                             <div class="shop__items-item">
-                                <img src="src/img1.webp" alt="img" class="item-img" style="width: 150px;">
+                                <img id="modalImage" src="src/img1.webp" alt="img" class="item-img" style="width: 150px;">
                                 <h3 class="item-title">THE WEEKND - BLINDING LIGHTS (UO LIMITED 12' VINYL LP)</h3>
                                 <p>50$</p>
                             </div>
                             <div class="shop__items-item">
-                                <img src="src/img2.webp" alt="img" class="item-img" style="width: 150px;">
+                                <img id="modalImage" src="src/img2.webp" alt="img" class="item-img" style="width: 150px;">
                                 <h3 class="item-title">THE WEEKND - BLINDING LIGHTS (UO LIMITED 12' VINYL LP)</h3>
                                 <p>50$</p>
                             </div>
                             <div class="shop__items-item">
-                                <img src="src/img1.webp" alt="img" class="item-img" style="width: 150px;">
+                                <img id="modalImage" src="src/img1.webp" alt="img" class="item-img" style="width: 150px;">
                                 <h3 class="item-title">THE WEEKND - BLINDING LIGHTS (UO LIMITED 12' VINYL LP)</h3>
                                 <p>50$</p>
                             </div>
                             <div class="shop__items-item">
-                                <img src="src/img2.webp" alt="img" class="item-img" style="width: 150px;">
+                                <img id="modalImage" src="src/img2.webp" alt="img" class="item-img" style="width: 150px;">
                                 <h3 class="item-title">THE WEEKND - BLINDING LIGHTS (UO LIMITED 12' VINYL LP)</h3>
                                 <p>50$</p>
                             </div>
                             <div class="shop__items-item">
-                                <img src="src/img1.webp" alt="img" class="item-img" style="width: 150px;">
+                                <img id="modalImage" src="src/img1.webp" alt="img" class="item-img" style="width: 150px;">
                                 <h3 class="item-title">THE WEEKND - BLINDING LIGHTS (UO LIMITED 12' VINYL LP)</h3>
                                 <p>50$</p>
                             </div>
                             <div class="shop__items-item">
-                                <img src="src/img2.webp" alt="img" class="item-img" style="width: 150px;">
+                                <img id="modalImage" src="src/img2.webp" alt="img" class="item-img" style="width: 150px;">
                                 <h3 class="item-title">THE WEEKND - BLINDING LIGHTS (UO LIMITED 12' VINYL LP)</h3>
                                 <p>50$</p>
                             </div>
@@ -189,7 +210,7 @@
                                     <i class="fa-solid fa-check fa-sm" style="color: #ffffff;"></i>
                                 </div>
                             </h1>
-                            <p class="header__text">Powered by SimpLink</p>
+                            <p style="color: #555555;" class="header__text">Powered by SimpLink</p>
                         </div>
                     </div>
                     <div class="view__content">
@@ -219,13 +240,16 @@
 
             <div class="page-layout__navbar tab-buttons">
                 <label for="tab1">
-                    <span class="material-symbols-rounded">home</span>
+                    <!-- <span class="material-symbols-rounded">home</span> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"><path d="M160-180v-390q0-14.25 6.38-27 6.37-12.75 17.62-21l260-195q15.68-12 35.84-12Q500-825 516-813l260 195q11.25 8.25 17.63 21 6.37 12.75 6.37 27v390q0 24.75-17.62 42.37Q764.75-120 740-120H590q-12.75 0-21.37-8.63Q560-137.25 560-150v-220q0-12.75-8.62-21.38Q542.75-400 530-400H430q-12.75 0-21.37 8.62Q400-382.75 400-370v220q0 12.75-8.62 21.37Q382.75-120 370-120H220q-24.75 0-42.37-17.63Q160-155.25 160-180Z"/></svg>
                 </label>
                 <label for="tab2">
-                    <span class="material-symbols-rounded">local_mall</span>
+                    <!-- <span class="material-symbols-rounded">local_mall</span> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"><path d="M186.67-80q-27 0-46.84-19.83Q120-119.67 120-146.67V-660q0-27 19.83-46.83 19.84-19.84 46.84-19.84h100q0-80.33 54.83-136.83Q396.33-920 476.67-920q80.33 0 138.5 56.5 58.16 56.5 58.16 136.83h100q27 0 46.84 19.84Q840-687 840-660v513.33q0 27-19.83 46.84Q800.33-80 773.33-80H186.67Zm166.66-646.67h253.34q0-53.33-36.67-90-36.67-36.66-90-36.66t-90 36.66q-36.67 36.67-36.67 90ZM479.67-420Q553-420 613-470.67q60-50.66 59.67-113.66 0-13-9.67-22.67-9.67-9.67-24-9.67-12 0-21.33 8-9.34 8-12.34 22-10.33 44-46 72-35.66 28-79.66 28t-79.84-28q-35.83-28-45.83-72-3-14.33-12.33-22.16-9.34-7.84-21.34-7.84-13.66 0-23.5 9.67-9.83 9.67-9.83 22.67 0 63 59.33 113.66Q405.67-420 479.67-420Z"/></svg>
                 </label>
                 <label for="tab3">
-                    <span class="material-symbols-rounded">person</span>
+                    <!-- <span class="material-symbols-rounded">person</span> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"><path d="M480-480.67q-66 0-109.67-43.66Q326.67-568 326.67-634t43.66-109.67Q414-787.33 480-787.33t109.67 43.66Q633.33-700 633.33-634t-43.66 109.67Q546-480.67 480-480.67Zm-320 254V-260q0-36.67 18.5-64.17T226.67-366q65.33-30.33 127.66-45.5 62.34-15.17 125.67-15.17t125.33 15.5q62 15.5 127.34 45.17 30.33 14.33 48.83 41.83T800-260v33.33q0 27.67-19.5 47.17T733.33-160H226.67q-27.67 0-47.17-19.5T160-226.67Z"/></svg>
                 </label>
             </div>
         </div>
