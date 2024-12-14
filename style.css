@@ -2,9 +2,15 @@
     font-family: "Montserrat";
     src: url(public/fonts/montserrat-v26-vietnamese-regular.woff2) format("woff2");
 }
-@font-face {
-    font-family: "impact";
+/* @font-face {
+    font-family: "Impact";
     src: url(public/fonts/impact.woff2) format("woff2");
+} */
+@font-face {
+    font-family: 'Impact Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Impact Regular'), url('impact.woff') format('woff');
 }
 * {
     user-select: none;
@@ -24,7 +30,7 @@
     --font-subheading-color: #7f7f7f;
     --font-title-theme-color: #df3119; 
     --font-price-size: 15px;
-    --typography-brand-title: "impact";
+    --typography-brand-title: "Impact Regular";
     --typography-brand-subtitle: "Montserrat";
     --typography-brand-paragraph: "Montserrat";
 }
@@ -36,7 +42,6 @@ body {
 }
 h1, h2, h3 {
     font-family: var(--typography-brand-title);
-    font-weight: normal;
 }
 h3 {color: var(--font-title-theme-color);}
 p {
